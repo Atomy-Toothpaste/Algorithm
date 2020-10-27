@@ -11,11 +11,11 @@ function solution(s) {
   if (pCount != yCount) return !answer;
 }
 
-function numPY(s) {
-  return s.match(/p/gi || []).length == s.match(/y/gi || []).length;
-}
-
 /*  
+    function numPY(s) {
+        return s.match(/p/gi || []).length == s.match(/y/gi || []).length;
+    }
+
     match는 String.prototype에 있는 메서드 
     형태는 str.match(regexp)
     regexp은 정규표현식
