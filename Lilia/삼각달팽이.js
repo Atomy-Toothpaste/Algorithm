@@ -29,17 +29,8 @@ function solution(n) {
         ++pointj;
         if (answer[pointj][pointi]) break;
     }
-   
-    let arr = [];
-    let a = 0;
-    for(let i=0;i<=n;i++){
-        for(let j=0;j<i;j++){
-            arr[a++] = answer[i-1][j];
-        }
-    }
 
-
-    return arr;
+    return answer.flat();
 }
 
 console.log(solution(5));
