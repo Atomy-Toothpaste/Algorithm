@@ -6,17 +6,11 @@ function solution(priorities, location) {
     if (max > tmp) {
       priorities.push(tmp);
     } else {
-      answer = answer + 1;
-      if (location === 0) {
-        break;
-      }
+      answer++;
+      if (location === 0) break;
     }
-    if (location === 0) {
-      location = priorities.length - 1;
-    } else {
-      location--;
-    }
+    if (location === 0) location = priorities.length - 1;
+    else location--;
   }
   return answer;
 }
-console.log(solution([1, 1, 9, 1, 1, 1], 0));
