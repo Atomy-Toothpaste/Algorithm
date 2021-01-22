@@ -1,8 +1,7 @@
 function solution(board, moves) {
   var answer = 0,
     basket = [],
-    column,
-    doll;
+    column;
 
   // 뽑기
   for (let i = 0; i < moves.length; i++) {
