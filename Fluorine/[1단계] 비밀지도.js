@@ -3,21 +3,6 @@ function solution(n, arr1, arr2) {
 
     // 2진수 변환
     for(let i = 0; i < n; i++) {
-        temp = arr1[i].toString(2);
-
-        if(temp.length !== n) {
-            temp = temp.split("");
-
-            while(temp.length !== n) temp.unshift("0");
-
-            temp = temp.join("");
-        }
-
-        arr1ToBinary.push(temp);
-    }
-
-    // 2진수 변환
-    for(let i = 0; i < n; i++) {
         temp = arr2[i].toString(2);
 
         if(temp.length !== n) {
